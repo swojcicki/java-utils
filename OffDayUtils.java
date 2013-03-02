@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -107,5 +108,24 @@ public final class OffDayUtils {
     GregorianCalendar calendar = new GregorianCalendar();
     calendar.setTime(date);
     return getFirstWorkDayBefore(calendar);
+  }
+
+  public static void main(String[] args) {
+    if (args.length == 1) {
+      int year = Integer.parseInt(args[0]);
+      int freeDays = 0;
+      int yearDays = 0;
+      GregorianCalendar date = new GregorianCalendar(year, Calendar.JANUARY, 1);
+      do {
+        if (isOffDayInPoland(date)) {
+          System.out.println(date.getTime());
+          freeDays++;
+        }
+        yearDays++;
+        date.add(Calendar.DAY_OF_MONTH, 1);
+      } while (date.get(Calendar.YEAR) != year + 1);
+      System.out.println("Dni w roku: " + yearDays);
+      System.out.println("Dni wolnych od pracy: " + freeDays);
+    }
   }
 }
