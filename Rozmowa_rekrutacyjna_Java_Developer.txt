@@ -45,4 +45,5 @@ Rozmowa rekrutacyjna Java Developer
     - VAR - Wariancja statyczna dla wszystkich wartości 
     - VARP - Wariacja statyczna dla wszystkich wartości w populacji 
 20. Checked versus unchecked exceptions - http://www.javapractices.com/topic/TopicAction.do?Id=129
-21. 
+21. Error - An Error is a subclass of Throwable that indicates serious problems that a reasonable application should not try to catch. - http://docs.oracle.com/javase/1.4.2/docs/api/java/lang/Error.html
+22.
