@@ -1,4 +1,3 @@
-
 Rozmowa rekrutacyjna Java Developer
 
 1. Algorytmy sortujące. bąbelkowy, przez wstawianie, przez scalanie.
@@ -20,15 +19,29 @@ Rozmowa rekrutacyjna Java Developer
     - public void draw(int i);
     - public void draw(double f);
     - public void draw(int i, double f);
-11. overriding - in sub classes
+11. overriding - in sub classes 
 12. Collection.
-    - czy map należy do Collection
+    - czy Map należy do Collection?
     - implementacje interfejsu Map (4) 
     - różnica ArrayList vs. LinkedList
     - 
 13. TDD
 14. public, private, protected (subclass), "package" no modifier
 15. transient - non serializable field
-16. final - field, class, method, variable
-17. static block... - what is,, memory access of static block, ect.
-18. 
+16. final
+    - A final variable can only be initialized once, either via an initializer or an assignment statement.
+    - class, method - can not be overridden
+17. static block... - what is, memory access of static block, ect.
+18. Kompozycja ponad dziedziczenie - http://en.wikipedia.org/wiki/Composition_over_inheritance
+19. sql - funkcje agregujące 
+    - AVG - Średnia z wartości w wyrażeniu numerycznym 
+    - COUNT - Liczba wartości w wyrażeniu 
+    - COUNT(*) - Liczba zaznaczonych wierszy 
+    - MAX - Największa wartość w wyrażeniu 
+    - MIN - Najmniejsza wartość w wyrażeniu 
+    - SUM - Suma wartości w wyrażeniu numerycznym 
+    - STDEV - Odchylenie statystyczne dla wszystkich wartości 
+    - STDEVP - Odchylenie statystyczne dla populacji 
+    - VAR - Wariancja statyczna dla wszystkich wartości 
+    - VARP - Wariacja statyczna dla wszystkich wartości w populacji 
+20. 
